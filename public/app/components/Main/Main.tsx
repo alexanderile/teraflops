@@ -14,10 +14,10 @@ export const Main = (props) => {
                         Kill the dragon
                     </div>
                     <div className={'Quest__body'}>
-
+                        Description
                     </div>
                     <div className={'Quest__controls'}>
-                        <Button>Start</Button>
+                        <Button theme={'accent'}>Start</Button>
                         <Button>Join</Button>
                         <Button>Open</Button>
                     </div>
