@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "removeComments": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowJs": true,
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "jsx": "react",
+    "lib": [
+      "es5",
+      "es6",
+      "dom",
+      "es2017",
+      "es2015.core",
+      "es2015.collection",
+      "es2015.generator",
+      "es2015.iterable",
+      "es2015.promise",
+      "es2015.proxy",
+      "es2015.reflect",
+      "es2015.symbol",
+      "es2015.symbol.wellknown",
+      "esnext.asynciterable"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "server",
+    "dist"
+  ]
+}

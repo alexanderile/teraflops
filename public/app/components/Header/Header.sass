@@ -1,0 +1,101 @@
+.Header
+  &Links
+    justify-self: flex-end
+  &Resources
+    justify-self: flex-end
+  &Resource
+    display: inline-block
+    color: #757575
+    position: relative
+    padding-right: 5em
+    &:before
+      content: ''
+      display: block
+      position: absolute
+    &--crystal
+      &:before
+        background:
+          image: url('./crystal.svg')
+          size: cover
+          position: center
+          repeat: no-repeat
+        height: 14px
+        width: 14px
+        top: 0
+        left: -18px
+    &--gold
+      &:before
+        background:
+          image: url('./gold.svg')
+          size: cover
+          position: center
+          repeat: no-repeat
+        height: 18px
+        width: 18px
+        top: -3px
+        left: -24px
+  &Account
+    display: flex
+    align-items: center
+    height: 50px
+    cursor: pointer
+    div
+      padding: 0 0.25em
+  &Search
+    input
+      border: none
+      height: 50px
+      font-size: 2em
+      padding: 0 1em
+      outline: none
+      font-weight: 100
+      width: 100%
+  &Sub
+    height: 50px
+    display: grid
+    grid-template-columns: auto auto
+    padding: 0 2rem
+    align-content: stretch
+    box-shadow: 0 0 2rem 0 #cccccc
+    background-color: #ffffff
+    color: #757575
+    position: relative
+    &__title
+      font-family: 'Rammetto One', cursive
+      font-size: 2em
+      line-height: 50px
+      user-select: none
+      cursor: pointer
+      padding: 0 2rem
+      color: #757575
+    &__facilities
+      display: grid
+      grid-template-columns: auto auto auto
+      align-items: center
+      justify-content: flex-end
+      grid-gap: 1rem
+  &Menu
+    display: flex
+    padding: 0 1em
+    justify-content: space-between
+    box-sizing: border-box
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 1
+    &__link
+      color: #757575
+      padding: 1em
+      text-decoration: none
+      &--active
+        background-color: #313131
+//@media screen and (max-width: 1280px)
+
+@media screen and (max-width: 1024px)
+  .Header
+    &Sub
+      &__facilities
+        display: none
+
+//@media screen and (max-width: 768px)
