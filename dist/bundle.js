@@ -26360,7 +26360,7 @@ exports = module.exports = __webpack_require__(12)(undefined);
 
 
 // module
-exports.push([module.i, ".Button {\n  border: none;\n  background-color: transparent;\n  color: #212121;\n  cursor: pointer;\n  transition: 0.3s;\n  opacity: 1;\n  font-size: 1em;\n  line-height: 1em;\n  padding: 0.5em 1em;\n  outline: none; }\n  .Button + .Button {\n    margin-left: 1em; }\n  .Button:hover {\n    opacity: 0.7; }\n  .Button--accent {\n    background-color: #F44336;\n    color: #ffffff; }\n", ""]);
+exports.push([module.i, ".Button {\n  border: none;\n  background-color: transparent;\n  color: #212121;\n  cursor: pointer;\n  transition: 0.3s;\n  opacity: 1;\n  font-size: 1em;\n  line-height: 1em;\n  padding: 0.5em 1em;\n  outline: none; }\n  .Button + .Button {\n    margin-left: 1em; }\n  .Button:hover {\n    opacity: 0.7; }\n  .Button--accent {\n    background-color: #3F51B5;\n    color: #ffffff; }\n", ""]);
 
 // exports
 
