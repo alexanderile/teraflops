@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button} from '../Button/Button';
 import './Main.sass';
+import {connect} from 'react-redux';
 
 export const Main = (props) => {
     return <div className={'Main'}>
@@ -19,7 +20,13 @@ export const Main = (props) => {
                     <div className={'Quest__controls'}>
                         <Button theme={'accent'}>Start</Button>
                         <Button>Join</Button>
-                        <Button>Open</Button>
+                        <Button
+                            onClick={() => {
+                                props.history.push('/quest/1')
+                            }}
+                        >
+                            Open
+                        </Button>
                     </div>
                 </div>
             </div>

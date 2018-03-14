@@ -26105,7 +26105,8 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Header_Header__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Main_Main__ = __webpack_require__(130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_router__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Quest_Quest__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_router__ = __webpack_require__(133);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -26121,6 +26122,7 @@ var __extends = (this && this.__extends) || (function () {
 
 
 
+
 var App = (function (_super) {
     __extends(App, _super);
     function App() {
@@ -26130,11 +26132,12 @@ var App = (function (_super) {
         return __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { className: 'wrap wrap--global' },
             __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_2__components_Header_Header__["a" /* default */], null),
             __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* Switch */], null,
-                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Route */], { path: '/', exact: true, component: __WEBPACK_IMPORTED_MODULE_3__components_Main_Main__["a" /* Main */] })));
+                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Route */], { path: '/', exact: true, component: __WEBPACK_IMPORTED_MODULE_3__components_Main_Main__["a" /* Main */] }),
+                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Route */], { path: '/quest:id', exact: true, component: __WEBPACK_IMPORTED_MODULE_4__components_Quest_Quest__["a" /* Quest */] })));
     };
     return App;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]));
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_4_react_router__["a" /* withRouter */])(App));
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_5_react_router__["a" /* withRouter */])(App));
 
 
 /***/ }),
@@ -26315,7 +26318,9 @@ var Main = function (props) {
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: 'Quest__controls' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Button_Button__["a" /* Button */], { theme: 'accent' }, "Start"),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Button_Button__["a" /* Button */], null, "Join"),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Button_Button__["a" /* Button */], null, "Open"))))));
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Button_Button__["a" /* Button */], { onClick: function () {
+                                props.history.push('/quest/1');
+                            } }, "Open"))))));
 };
 
 
@@ -26404,6 +26409,20 @@ exports.push([module.i, ".Main {\n  box-sizing: border-box;\n  height: calc(100v
 
 
 
+
+
+/***/ }),
+/* 134 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Quest; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+var Quest = function (props) {
+    return (__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, "/"));
+};
 
 
 /***/ })
